@@ -2,6 +2,9 @@
 /* Css Variabels */
 :root{
     --primary-color:#047aed;
+    --secondary-color:#1c3fa8;
+    --dark-color:#002240;
+    --light-color:#f4f4f4;
 }
 /* Reset */
 *{
@@ -109,7 +112,6 @@ img{
     padding-top: 100px;
 }
 .stats-heading{
-    /* max-width: 500px; */
     margin: 0 auto;
 }
 .stats .grid h3{
@@ -119,3 +121,33 @@ img{
         font-size: 20px;
         font-weight: bold;
 }
+/* Cli */
+.cli .grid{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.cli .grid > *:first-child{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+/* cloud */
+.cloud .grid{
+    grid-template-columns: 4fr 3fr;
+}
+/* Languges */
+.languages .flex{
+    flex-wrap: wrap;
+}
+.languages .card{
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+.languages .card h4{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.languages .card:hover{
+transform: translateY(-15px);
+}
+
