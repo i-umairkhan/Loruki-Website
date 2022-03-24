@@ -80,6 +80,11 @@
     background-color: var(--secondary-light);
     color: #333;
 }
+.bg-primary a, .btn-primary a,
+.bg-secondary a, .btn-secondary a,
+.bg-dark a, .btn-dark a{
+    color: #fff;
+}
 .py-1{
     padding: 1rem 0;
 }
